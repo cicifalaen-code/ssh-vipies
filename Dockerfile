@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y openssh-server curl git nano sudo ca-certificates procps figlet neofetch lolcat \
+RUN apt-get update && apt-get install -y openssh-server curl git nano sudo ca-certificates procps figlet toilet neofetch lolcat \
  && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
  && apt-get install -y nodejs \
  && mkdir -p /run/sshd && rm -rf /var/lib/apt/lists/*
