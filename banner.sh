@@ -12,7 +12,7 @@ up=$(uptime -p | sed 's/up //')
 os=$(. /etc/os-release; echo $PRETTY_NAME)
 
 echo
-toilet -f future "likscam.t.me." | /usr/games/lolcat -f -p 2
+toilet -f future --filter gay "likscam.t.me."
 echo -e "${D}━━ ${V}C L O U D  V P S${D} ━━${N}\n"
 echo -e "  ${G}● ONLINE${N}  ${Y}$(hostname)${N}\n"
 echo -e "${V}┌─ ${Y}SPEK MESIN${V} ──────────────────────────${N}"
