@@ -12,19 +12,19 @@ up=$(uptime -p | sed 's/up //')
 os=$(. /etc/os-release; echo $PRETTY_NAME)
 
 echo
-/usr/bin/figlet -f big "@likscam" | /usr/games/lolcat -f
-echo -e "${V}  ─ THE DEV · CLOUD VPS ─${N}\n"
+toilet -f future "@likscam" | /usr/games/lolcat -f -p 2
+echo -e "${D}━━ ${V}C L O U D  V P S${D} ━━${N}\n"
 echo -e "  ${G}● ONLINE${N}  ${Y}$(hostname)${N}\n"
-echo -e "${V}┌─ ${Y}SPEK MESIN${V} ───────────────────────${N}"
+echo -e "${V}┌─ ${Y}SPEK MESIN${V} ──────────────────────────${N}"
 echo -e "  proc   $model"
 echo -e "  cpu    $(bar $cp) ${cp}% ${n} core"
 echo -e "  ram    $(bar $rp) ${rp}% ${mu}/${mt} MiB"
 echo -e "  disk   $(bar ${dp%\%}) ${dp} ${du}/${dt}"
 echo -e "  load   $l"
 echo -e "  uptime $up"
-echo -e "${V}├─ ${Y}KONEKSI${V} ───────────────────────────${N}"
+echo -e "${V}├─ ${Y}KONEKSI${V} ─────────────────────────────${N}"
 echo -e "  os     $os"
 echo -e "  node   $(node -v 2>/dev/null)"
 echo -e "  ip     $(hostname -I | awk '{print $1}')"
-echo -e "${V}└────────────────────────────────────${N}\n"
+echo -e "${V}└──────────────────────────────────────────${N}\n"
 echo -e "  › Ketik ${Y}vps${N} buat lihat info ini lagi\n"
